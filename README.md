@@ -18,11 +18,11 @@ This directory contains a Zed extension for the DSRV language.
 
 3. In Zed, run **Install Dev Extension** and pick this directory:
 
-   - `zed-extension`
+   - this `zed-dsrv` repository
 
 ## Notes
 
 - The extension starts the language server by looking for `dsrv-lsp` in the project shell environment.
 - If `dsrv-lsp` is not available in `PATH`, Zed will show an error from the extension.
 - The grammar is configured as a local `file://` repository in `extension.toml`.
-- If you move this project folder, update `[grammars.dsrv].repository` to the new absolute `file://` path of `zed-extension/tree-sitter-dsrv`.
+- If you move this project folder, update `[grammars.dsrv].repository` to the new absolute `file://` path of the standalone `tree-sitter-dsrv` repository.
