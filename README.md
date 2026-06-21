@@ -26,3 +26,7 @@ This directory contains a Zed extension for the DSRV language.
 - If `dsrv-lsp` is not available in `PATH`, Zed will show an error from the extension.
 - The grammar is configured as a local `file://` repository in `extension.toml`.
 - If you move this project folder, update `[grammars.dsrv].repository` to the new absolute `file://` path of the standalone `tree-sitter-dsrv` repository.
+
+## License
+
+This project is licensed under the INTO-CPS Association Public License (ICAPL). The selected usage mode is documented in `ICA-USAGE-MODE.txt`. See `LICENSE.md`.
