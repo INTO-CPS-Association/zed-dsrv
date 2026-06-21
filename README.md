@@ -12,7 +12,7 @@ This directory contains a Zed extension for the DSRV language.
 
 1. Build the language server binary:
 
-   - `cargo build --release --manifest-path server/Cargo.toml`
+   - `cargo install --git https://github.com/INTO-CPS-Association/dsrv-lsp.git --locked` or build `dsrv-lsp` from source
 
 2. Put `dsrv-lsp` on your `PATH`.
 
@@ -24,8 +24,7 @@ This directory contains a Zed extension for the DSRV language.
 
 - The extension starts the language server by looking for `dsrv-lsp` in the project shell environment.
 - If `dsrv-lsp` is not available in `PATH`, Zed will show an error from the extension.
-- The grammar is configured as a local `file://` repository in `extension.toml`.
-- If you move this project folder, update `[grammars.dsrv].repository` to the new absolute `file://` path of the standalone `tree-sitter-dsrv` repository.
+- The grammar is configured to use `https://github.com/INTO-CPS-Association/tree-sitter-dsrv.git` in `extension.toml`.
 
 ## License
 

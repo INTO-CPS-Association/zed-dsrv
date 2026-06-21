@@ -20,7 +20,7 @@ impl zed::Extension for DsrvExtension {
             });
         }
 
-        Err("Could not find `dsrv-lsp` in PATH. Build the language server (`cargo build --release --manifest-path server/Cargo.toml`) and add the resulting binary to your PATH.".to_string())
+        Err("Could not find `dsrv-lsp` in PATH. Install the language server (`cargo install --git https://github.com/INTO-CPS-Association/dsrv-lsp.git --locked`) or build it from source, then add the resulting binary to your PATH.".to_string())
     }
 }
 
