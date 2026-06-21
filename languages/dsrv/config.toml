@@ -1,0 +1,13 @@
+name = "DSRV"
+grammar = "dsrv"
+path_suffixes = ["dsrv"]
+line_comments = ["// "]
+
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "<", end = ">", close = true, newline = false },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "(*", end = "*)", close = true, newline = false, not_in = ["comment", "string"] },
+]
