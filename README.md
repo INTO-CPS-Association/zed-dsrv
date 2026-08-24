@@ -10,21 +10,20 @@ This directory contains a Zed extension for the DSRV language.
 
 ## Setup
 
-1. Build the language server binary:
+1. Install `dsrv-lsp`:
 
-   - `cargo install --git https://github.com/INTO-CPS-Association/dsrv-lsp.git --locked` or build `dsrv-lsp` from source
+   - On Linux x86_64, the extension downloads the latest stable release automatically when no `dsrv-lsp` is found on `PATH`.
+   - Otherwise, install it with `cargo install --git https://github.com/INTO-CPS-Association/dsrv-lsp.git --locked` or build `dsrv-lsp` from source, then put it on your `PATH`.
 
-2. Put `dsrv-lsp` on your `PATH`.
-
-3. In Zed, run **Install Dev Extension** and pick this directory:
+2. In Zed, run **Install Dev Extension** and pick this directory:
 
    - this `zed-dsrv` repository
 
 ## Notes
 
-- The extension starts the language server by looking for `dsrv-lsp` in the project shell environment.
-- If `dsrv-lsp` is not available in `PATH`, Zed will show an error from the extension.
-- The grammar is configured to use `https://github.com/INTO-CPS-Association/tree-sitter-dsrv.git` in `extension.toml`.
+- The extension prefers `dsrv-lsp` from the project shell environment and otherwise downloads the current Linux x86_64 release asset from `INTO-CPS-Association/dsrv-lsp`.
+- The current LSP starts directly over stdin/stdout and therefore receives no command-line arguments.
+- The grammar is pinned to the current local `tree-sitter-dsrv` HEAD in `extension.toml`; newer checker constructs that are not yet represented by that grammar require a coordinated grammar update and pin change.
 
 ## License
 

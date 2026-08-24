@@ -1,7 +1,9 @@
 name = "DSRV"
 grammar = "dsrv"
 path_suffixes = ["dsrv"]
-line_comments = ["// "]
+line_comments = ["//"]
+
+block_comment = ["(*", "*)"]
 
 brackets = [
   { start = "{", end = "}", close = true, newline = true },

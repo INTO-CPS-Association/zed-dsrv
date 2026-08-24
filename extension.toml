@@ -10,9 +10,14 @@ repository = "https://github.com/INTO-CPS-Association/zed-dsrv.git"
 name = "DSRV Language Server"
 languages = ["DSRV"]
 
+[[capabilities]]
+kind = "download_file"
+host = "github.com"
+path = ["INTO-CPS-Association", "dsrv-lsp", "releases", "**"]
+
 [language_servers.dsrv-lsp.language_ids]
 DSRV = "dsrv"
 
 [grammars.dsrv]
 repository = "https://github.com/INTO-CPS-Association/tree-sitter-dsrv.git"
-commit = "43962e535fccdbad1b23ff6e2ac1a1393bc2a3c4"
+commit = "729b7a6410ace0a98ce442656d336a48a721a0cc"
