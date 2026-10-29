@@ -23,7 +23,7 @@ This directory contains a Zed extension for the DSRV language.
 
 - The extension prefers `dsrv-lsp` from the project shell environment and otherwise downloads the current Linux x86_64 release asset from `INTO-CPS-Association/dsrv-lsp`.
 - The current LSP starts directly over stdin/stdout and therefore receives no command-line arguments.
-- The grammar is pinned to the current local `tree-sitter-dsrv` HEAD in `extension.toml`; newer checker constructs that are not yet represented by that grammar require a coordinated grammar update and pin change.
+- The grammar is pinned to a `tree-sitter-dsrv` commit in `extension.toml`. It follows the checker syntax as of checker commit 8c71d20d; newer checker constructs need a coordinated grammar update and pin change.
 
 ## License
 

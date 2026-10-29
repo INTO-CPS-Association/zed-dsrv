@@ -20,4 +20,4 @@ DSRV = "dsrv"
 
 [grammars.dsrv]
 repository = "https://github.com/INTO-CPS-Association/tree-sitter-dsrv.git"
-commit = "729b7a6410ace0a98ce442656d336a48a721a0cc"
+commit = "377f352447d65a5dc62f4cbac42b527c12c04ef8"
